@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é a Melhor irmão(ã)?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quem é o melhor irmão(ã)?</h1>
+    
+    <button class="sister" onclick="showMessage(true)">
+        <img src="/img/eu.jpg" alt="Eu">
+    </button>
+
+    <button class="sister" onclick="showMessage(false, this)">
+     <img src="/img/gaby.jpg" alt="Gaby">
+    </button>
+
+    <button class="sister" onclick="showMessage(false, this)">        
+    <img src="/img/josias.jpg" alt=" Josias">
+    </button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <canvas id="confettiCanvas" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
